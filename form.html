@@ -34,17 +34,15 @@
         /*max-width: 15em;*/
       }
       fieldset {
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*display: inline-block;*/
-        margin: 1em;
+        border: .2em dashed #7e850a;
+        /*width: 25em;*/
       }
       input {
         font-family: Arial, sans-serif;
         /*font-size: .8em;*/
         font-weight: bold;
       }
-      .button {
+      #button {
         background-color: #7e850a;
         color: #ffffff;
         /*padding: .2em;*/
@@ -66,12 +64,13 @@
           <label for="email" class="float">E-mail:</label>
           <input type="text" name="email" id="email" placeholder="Your E-mail Address" required="required">
         </fieldset>
+        <br>
         <fieldset>
           <label for="comments">Comments:</label>
           <!-- <br> -->
-          <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+          <textarea name="comments" id="comments" rows="5" cols="48"></textarea>
           <br>
-          <input type="submit" value="Submit" class="button">
+          <input type="submit" value="Submit" id="button">
         </fieldset>
       </form>
     </div>
