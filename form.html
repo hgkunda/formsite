@@ -20,6 +20,15 @@
         padding: 1.5em;
         /*margin: 0 auto;*/
       }
+      h2 {
+        background-color: #7e850a;
+        color: #ffffff;
+        /*font-weight: bold;*/
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 0;
+        /*width: 100%;*/
+      }
       label {
         /*font-family: Garamond, serif;*/
         /*margin-top: .1em;
@@ -52,8 +61,8 @@
   </head>
   <body>
     <div id="wrapper">
-      <!-- <h2>Sign up for our newsletter!</h2> -->
       <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+        <h2>Sign up for our newsletter!</h2>
         <fieldset>
           <label for="first_name" class="float">First Name:</label>
           <input type="text" name="first_name" id="first_name" placeholder="Your First Name" required="required">
@@ -65,8 +74,10 @@
           <input type="text" name="email" id="email" placeholder="Your E-mail Address" required="required">
         </fieldset>
         <br>
+        <!-- <fieldset>
+        </fieldset> -->
         <fieldset>
-          <label for="comments">Comments:</label>
+          <label for="comments" style="text-align: center;">Comments:</label>
           <!-- <br> -->
           <textarea name="comments" id="comments" rows="5" cols="48"></textarea>
           <br>
