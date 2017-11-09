@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <title>Form Sample</title>
      <style>
-      #wrapper {
+      /*#wrapper {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-      }
+      }*/
       .float {
         /*float: left;*/
       }
       form {
         font-family: Garamond, serif;
-        max-width: 25em;
+        width: 25em;
+        /*height: 25em;*/
         background-color: #ffdca2;
         padding: 1.5em;
+        /*margin: 0 auto;*/
       }
       label {
         /*font-family: Garamond, serif;*/
@@ -35,6 +37,7 @@
         /*display: flex;*/
         /*flex-direction: column;*/
         /*display: inline-block;*/
+        margin: 1em;
       }
       input {
         font-family: Arial, sans-serif;
@@ -51,9 +54,9 @@
   </head>
   <body>
     <div id="wrapper">
-      <h2>Sign up for our newsletter!</h2>
+      <!-- <h2>Sign up for our newsletter!</h2> -->
       <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-        <!-- <fieldset> -->
+        <fieldset>
           <label for="first_name" class="float">First Name:</label>
           <input type="text" name="first_name" id="first_name" placeholder="Your First Name" required="required">
           <br>
@@ -62,12 +65,14 @@
           <br>
           <label for="email" class="float">E-mail:</label>
           <input type="text" name="email" id="email" placeholder="Your E-mail Address" required="required">
-        <!-- </fieldset> -->
-        <label for="comments">Comments:</label>
-        <!-- <br> -->
-        <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
-        <br>
-        <input type="submit" value="Submit" class="button">
+        </fieldset>
+        <fieldset>
+          <label for="comments">Comments:</label>
+          <!-- <br> -->
+          <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+          <br>
+          <input type="submit" value="Submit" class="button">
+        </fieldset>
       </form>
     </div>
   </body>
