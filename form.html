@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Sample</title>
+     <style>
+      #wrapper {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .float {
+        float: left;
+      }
+      form {
+        /*font-family: Garamond, serif;*/
+        /*max-width: 15em;*/
+        background-color: #ffdca2;
+      }
+      label {
+        /*font-family: Garamond, serif;*/
+        margin-bottom: .2em;
+      }
+      textarea {
+        /*background-color: #ffdca2;*/
+        /*max-width: 15em;*/
+      }
+      fieldset {
+        display: flex;
+        flex-direction: column;
+      }
+     </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h2>Sign up for our newsletter!</h2>
+      <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+        <fieldset>
+          <label for="first_name" class="float">First Name:</label>
+          <input type="text" name="first_name" id="first_name" placeholder="Your First Name" required="required">
+          <br>
+          <label for="last_name" class="float">Last Name:</label>
+          <input type="text" name="last_name" id="last_name" placeholder="Your Last Name" required="required">
+          <br>
+          <label for="email" class="float">E-mail:</label>
+          <input type="text" name="email" id="email" placeholder="Your E-mail Address" required="required">
+        </fieldset>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
