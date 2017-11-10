@@ -19,37 +19,35 @@
       }
       label {
         display: block;
-        font-size: 1em;
-        /*text-align: center;*/
-      }
-      #comments {
-        /*align-content: center;*/
+        font-size: .7em;
       }
       fieldset {
         border: .15em dashed #7e850a;
         height: 7.5em;
         text-align: center;
       }
+      legend {
+        color: #872A0A;
+        font-weight: bold;
+      }
       input {
         font-family: Arial, sans-serif;
-        /*font-size: .8em;*/
         font-weight: bold;
         text-align: center;
       }
       #button {
         background-color: #7e850a;
         color: #ffffff;
-        /*padding: .2em;*/
         margin: 0 auto;
         font-size: 1em;
       }
      </style>
   </head>
   <body>
-    <div id="wrapper">
       <form method="post" action="http://webdevbasics.net/scripts/demo.php">
         <h2>Sign up for our newsletter!</h2>
         <fieldset>
+          <legend>Personal Information</legend>
           <label for="first_name" >First Name:</label>
           <input type="text" name="first_name" id="first_name" placeholder="Your First Name" required="required" size="20">
           <br>
@@ -61,12 +59,12 @@
         </fieldset>
         <br>
         <fieldset>
-          <label for="comments" style="text-align: center;">Comments:</label>
+          <legend>Comments:</legend>
+          <!-- <label for="comments" style="text-align: center;">Comments:</label> -->
           <textarea name="comments" id="comments" rows="5" cols="35"></textarea>
           <br>
           <input type="submit" value="Submit" id="button">
         </fieldset>
       </form>
-    </div>
   </body>
 </html>
