@@ -10,42 +10,51 @@
       form {
         font-family: Garamond, serif;
         width: 20em;
-        background-color: #ffdca2;
+        background-color: #ffebd0;
         padding: 1em;
         text-align: center;
       }
-      h2 {
+      h3 {
         background-color: #7e850a;
         color: #ffffff;
         text-align: center;
+        font-size: 1.2em;
         padding: .3em 0;
         margin-top: 0;
+        border: .01em solid #ffffff;
       }
       label {
+        font-family: "Lucida Sans", sans-serif;
+        color: #7e850a;
         display: block;
+        font-weight: bold;
         font-size: .7em;
       }
       fieldset {
-        border: .15em dashed #7e850a;
-        height: 7.5em;
+        border: .15em double #7e850a;
+        height: 7.7em;
+        margin: 0 auto;
       }
       legend {
         color: #872a0a;
         font-weight: bold;
       }
       input {
-        font-family: Arial, sans-serif;
-        font-weight: bold;
+        font-family: "Lucida Sans", sans-serif;
         text-align: center;
       }
+      fieldset input {
+        width: 15em;
+      }
       #button {
+        font-family: Garamond, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
         background-color: #7e850a;
         color: #ffffff;
-        margin-top: 1em;
+        margin-top: .8em;
         padding-left: .5em;
         padding-right: .5em;
-        font-size: 1em;
-        font-family: Garamond;
       }
      </style>
 
@@ -54,7 +63,7 @@
   <body>
 
     <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-      <h2>Sign up for our newsletter!</h2>
+      <h3>Sign up for our newsletter!</h2>
 
       <fieldset>
         <legend>Personal Information</legend>
