@@ -12,6 +12,7 @@
         width: 20em;
         background-color: #ffdca2;
         padding: 1em;
+        text-align: center;
       }
       h2 {
         background-color: #7e850a;
@@ -27,7 +28,6 @@
       fieldset {
         border: .15em dashed #7e850a;
         height: 7.5em;
-        text-align: center;
       }
       legend {
         color: #872a0a;
@@ -41,7 +41,9 @@
       #button {
         background-color: #7e850a;
         color: #ffffff;
-        margin: 0 auto;
+        margin-top: 1em;
+        padding-left: .5em;
+        padding-right: .5em;
         font-size: 1em;
         font-family: Garamond;
       }
@@ -71,10 +73,12 @@
       <fieldset>
         <legend>Comments</legend>
         <label for="comments"></label>
-        <textarea name="comments" id="comments" rows="5" cols="35"></textarea>
-        <br>
-        <input type="submit" value="Submit" id="button">
+        <textarea name="comments" id="comments" rows="7" cols="35"></textarea>
       </fieldset>
+
+      <input type="submit" value="Submit" id="button">
+      &nbsp;
+      <input type="reset" value="Reset" id="button">
 
     </form>
 
